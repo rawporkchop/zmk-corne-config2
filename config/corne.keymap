@@ -74,9 +74,9 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
 
 // -----------------------------------------------------------------------------------------
-// |  ESC |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  boot|
-// |  TAB |     |     |     |     | rst |   |  -  |  =  |  [  |  ]  |  \  |  RET |
-// |  ALT |  BT1| BT2 | BT3 | BT4 | BT5 |   |  _  |  +  |  {  |  }  | "|" | BTCLR|
+// | boot |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |  boot|
+// |  rst |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  rst |
+// |btclr |  BT1| BT2 | BT3 | BT4 | BT5 |   |  _  |  +  |  {  |  }  | "|" |      |
 //                    | CTRL|     | SPC |   | BKSP|     | SHFT|
 
                         bindings = <
@@ -85,9 +85,9 @@
 // &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
 //                           &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
 
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                           &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &bootloader
-   &kp LCTRL &trans   &trans &trans   &trans   &sys_reset                          &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+   &bootloader  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT                           &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &bootloader
+   &sys_reset &trans   &trans &trans   &TILDE   &kp GRAVE                          &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &sys_reset
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &trans
                              &kp LCTRL    &trans       &kp SPACE                   &kp BSPC   &trans     &kp LSHFT
                         >;
                 };
