@@ -16,19 +16,19 @@
             key-positions = <0 1>;
             bindings = <&bootloader>;
         };
-
+        compatible = "zmk,combos";
         combo_bootloaderRight {
             timeout-ms = <50>;
             key-positions = <10 11>;
             bindings = <&bootloader>;
         };
-
+        compatible = "zmk,combos";
         combo_sysresetRight {
             timeout-ms = <50>;
             key-positions = <0 2>;
             bindings = <&sys_reset>;
         };
-
+        compatible = "zmk,combos";
         combo_bootloaderLeft {
             timeout-ms = <50>;
             key-positions = <9 11>;
