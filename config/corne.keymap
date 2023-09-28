@@ -15,19 +15,21 @@
     layers = <0>; \
   };
 
-combos {
-  compatible = "zmk,combos";
-
-  COMBO(bLeft, &bootloader, 0 1)
-  COMBO(bRight, &bootloader, 10 11)
-  COMBO(sLeft, &sys_reset, 0 2)
-  COMBO(sRight, &sys_reset, 9 11)
-
-
-};
-
 
 / {
+
+        combos {
+                compatible = "zmk,combos";
+
+                COMBO(bLeft, &bootloader, 0 1)
+                COMBO(bRight, &bootloader, 10 11)
+                COMBO(sLeft, &sys_reset, 0 2)
+                COMBO(sRight, &sys_reset, 9 11)
+
+
+        };
+
+
         keymap {
                 compatible = "zmk,keymap";
 
