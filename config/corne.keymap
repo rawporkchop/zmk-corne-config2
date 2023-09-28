@@ -52,8 +52,8 @@
 // &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
 // &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
 //                &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
-
-   &kp ESC     &kp SQT   &kp COMMA &kp DOT      &kp P       &kp Y   &kp F &kp G  &kp C &kp R &kp L &trans
+ll
+   &kp ESC     &kp SQT   &kp COMMA &kp DOT      &kp P       &kp Y   &kp F &kp G  &kp C &kp R &kp L &BSPC
    &kp TAB     &kp A     &kp O     &kp E        &kp U       &kp I   &kp D &kp H  &kp T &kp N &kp S &kp RALT
    &kp LSHIFT  &kp SEMI  &kp Q     &kp J        &kp K       &kp X   &kp B &kp M  &kp W &kp V &kp Z &trans
                &kp LCTRL &mo 1     &kp  SPACE   &kp BSPC    &mo 2 &kp LSHFT
