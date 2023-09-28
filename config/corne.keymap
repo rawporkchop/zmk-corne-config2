@@ -7,34 +7,23 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#define COMBO(NAME, BINDINGS, KEYPOS) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <0>; \
+  };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_bootloaderLeft {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&bootloader>;
-        };
-        compatible = "zmk,combos";
-        combo_bootloaderRight {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&bootloader>;
-        };
-        compatible = "zmk,combos";
-        combo_sysresetRight {
-            timeout-ms = <50>;
-            key-positions = <0 2>;
-            bindings = <&sys_reset>;
-        };
-        compatible = "zmk,combos";
-        combo_bootloaderLeft {
-            timeout-ms = <50>;
-            key-positions = <9 11>;
-            bindings = <&sys_reset>;
-        };
-    };
+combos {
+  compatible = "zmk,combos";
+
+  COMBO(bLeft, &bootloader, 0 1)
+  COMBO(bRight, &bootloader, 10 11)
+  COMBO(sLeft, &sys_reset, 0 2)
+  COMBO(sRight, &sys_reset, 9 11)
+
+
 };
 
 
@@ -115,8 +104,8 @@
 // &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
 //                           &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
 
-   &bootloader  &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT          &kp CARET  &kp AMPS   &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &bootloader
-   &sys_reset   &trans       &trans       &trans       &kp TILDE    &kp GRAVE          &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT  &kp BSLH  &sys_reset
+   &trans       &kp EXCL     &kp AT       &kp HASH     &kp DLLR     &kp PRCNT          &kp CARET  &kp AMPS   &kp KP_MULTIPLY &kp LPAR  &kp RPAR  &trans 
+   &trans       &trans       &trans       &trans       &kp TILDE    &kp GRAVE          &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT  &kp BSLH  &trans
    &bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &kp UNDER  &kp PLUS   &kp LBRC        &kp RBRC  &kp PIPE  &trans
                                           &kp LCTRL    &trans       &kp SPACE          &kp BSPC   &trans     &kp LSHFT
                         >;
