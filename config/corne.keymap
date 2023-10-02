@@ -23,7 +23,7 @@
                 compatible = "zmk,combos";
 
                 COMBO(btClear, &bt BT_CLR, 24 35)
-                COMBO(kInput, &tog 3)
+                COMBO(kInput, &tog 3, 35 12)
 
 
 
@@ -128,8 +128,8 @@
                         &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
                         &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                                 &kp RALT    &mo 1      &kp  SPACE    &kp RET    &mo 2    &kp LGUI
-                                
-                                >;
+
+                        >;
                 };
         };
 };
