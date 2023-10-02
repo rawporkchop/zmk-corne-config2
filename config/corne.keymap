@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#define QWERTY 3
 
 #define COMBO(NAME, BINDINGS, KEYPOS) \
   combo_##NAME { \
@@ -23,6 +24,7 @@
                 compatible = "zmk,combos";
 
                 COMBO(btClear, &bt BT_CLR, 24 35)
+                COMBO(kInput, &tog QWERTY)
 
 
 
@@ -117,6 +119,14 @@
    &trans       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4       &kp UNDER  &kp PLUS   &kp LBRC        &kp RBRC  &kp PIPE  &trans
                                           &kp RALT     &trans       &kp  SPACE         &kp RET    &trans    &kp LGUI
                         >;
+                };
+
+                qwerty_layer {
+
+                        &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+                        &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+                        &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+                                &kp RALT    &mo 1      &kp  SPACE    &kp RET    &mo 2    &kp LGUI
                 };
         };
 };
