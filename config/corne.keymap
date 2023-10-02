@@ -23,7 +23,7 @@
                 compatible = "zmk,combos";
 
                 COMBO(btClear, &bt BT_CLR, 24 35)
-                COMBO(kInput, &tog 3, 35 12)
+                COMBO(kInput, &tog 1, 35 12)
 
 
 
