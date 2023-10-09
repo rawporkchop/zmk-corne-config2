@@ -60,7 +60,7 @@
 //                &kp LGUI &mo 2 &kp SPACE   &kp RET &mo  &kp RALT
 
    &kp ESC     &kp SQT     &kp COMMA  &kp DOT       &kp P       &kp Y   &kp F &kp G  &kp C &kp R &kp L &kp BSPC
-   &kp LCTRL   &kp A       &kp O      &kp E         &kp U       &kp I   &kp D &kp H  &kp T &kp N &kp S &kp RALT
+   &kp LCTRL   &kp A       &kp O      &kp E         &kp U       &kp I   &kp D &kp H  &kp T &kp N &kp S &kp TAB
    &kp LSHIFT  &kp SEMI    &kp Q      &kp J         &kp K       &kp X   &kp B &kp M  &kp W &kp V &kp Z &tog 1
                &kp RALT    &mo 2      &kp  SPACE    &kp RET    &mo 3    &kp LGUI
 
