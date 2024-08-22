@@ -78,9 +78,9 @@
             //                    |     |     |     |   |     |       |     |
 
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp N7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp PAGE_UP
-&trans  &kp ESC       &trans        &trans        &kp DEL       &trans          &trans        &trans      &trans        &trans        &trans        &kp PAGE_DOWN
-&trans  &trans        &trans        &trans        &trans        &trans          &trans        &bt BT_PRV  &bt BT_NXT    &trans        &mo 5         &kp HOME
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp N7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans  &kp ESC       &trans        &trans        &kp DEL       &trans          &trans        &trans      &trans        &trans        &trans        &kp PAGE_UP
+&trans  &trans        &trans        &trans        &trans        &trans          &trans        &bt BT_PRV  &bt BT_NXT    &trans        &mo 5         &kp PAGE_DOWN
                                     &kp RALT      &trans        &kp SPACE       &kp RET       &trans      &kp LGUI
             >;
         };
