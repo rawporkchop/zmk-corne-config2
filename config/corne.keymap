@@ -78,10 +78,10 @@
             //                    |     |     |     |   |     |       |     |
 
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp N7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp PAGE_UP
-&trans  &kp ESC       &trans        &trans        &kp DEL       &trans          &trans        &trans  &trans        &trans        &trans        &kp PAGE_DOWN
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans        &trans  &trans        &trans        &mo 5         &kp HOME
-                                    &kp RALT      &trans        &kp SPACE       &kp RET       &trans  &kp LGUI
+&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp NUMBER_6  &kp N7      &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp PAGE_UP
+&trans  &kp ESC       &trans        &trans        &kp DEL       &trans          &trans        &trans      &trans        &trans        &trans        &kp PAGE_DOWN
+&trans  &trans        &trans        &trans        &trans        &trans          &trans        &bt BT_PRV  &bt BT_NXT    &trans        &mo 5         &kp HOME
+                                    &kp RALT      &trans        &kp SPACE       &kp RET       &trans      &kp LGUI
             >;
         };
 
